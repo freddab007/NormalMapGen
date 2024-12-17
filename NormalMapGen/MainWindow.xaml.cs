@@ -1,6 +1,8 @@
 ﻿using Microsoft.Win32;
+using System;
 using System.IO;
 using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace NormalMapGen
 {
@@ -22,11 +24,7 @@ namespace NormalMapGen
 
             if (openFileDialog.ShowDialog() == true)
             {
-
-                using (StreamReader s = new StreamReader(openFileDialog.FileName))
-                {
-                    
-                }
+                ImageShow.Source = new BitmapImage(new Uri(openFileDialog.FileName));
             }
         }
     }
