@@ -35,7 +35,6 @@ namespace NormalMapGen
 
             if (openFileDialog.ShowDialog() == true)
             {
-                string text = "";
 
                 using (StreamReader s = new StreamReader(openFileDialog.FileName))
                 {
