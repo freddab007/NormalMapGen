@@ -24,6 +24,7 @@ namespace NormalMapGen
 
             if (openFileDialog.ShowDialog() == true)
             {
+                //ImageShow.
                 ImageShow.Source = new BitmapImage(new Uri(openFileDialog.FileName));
             }
         }
