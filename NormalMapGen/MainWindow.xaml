@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="Open file" Click="OpenImage"/>
+                <MenuItem Header="Save file"/>
+                <!--<MenuItem Header="Export C++"  Click="ExportCPlusPlus"/>-->
+            </MenuItem>
+            <MenuItem Header="_Normal map">
+                <MenuItem Header="Open file"/>
+                <MenuItem Header="Save file"/>
+                <!--<MenuItem Header="Export C++"  Click="ExportCPlusPlus"/>-->
+            </MenuItem>
+        </Menu>
+        <Image HorizontalAlignment="Left" Height="200" Margin="10,23,0,0" VerticalAlignment="Top" Width="180"/>
+
     </Grid>
 </Window>
